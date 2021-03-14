@@ -7,7 +7,7 @@ control.onEvent(EventBusSource.MICROBIT_ID_BUTTON_A, EventBusValue.MICROBIT_BUTT
                     Score_A = 0
                     Score_B = 0
                     basic.showString("A")
-                    basic.pause(2000)
+                    basic.pause(1000)
                     basic.showLeds(`
                         . . # . .
                         . . # . .
@@ -34,7 +34,7 @@ control.onEvent(EventBusSource.MICROBIT_ID_BUTTON_B, EventBusValue.MICROBIT_BUTT
                     Score_B = 0
                     Score_A = 0
                     basic.showString("B")
-                    basic.pause(2000)
+                    basic.pause(1000)
                     basic.showLeds(`
                         . . # . .
                         . . # . .
@@ -76,7 +76,4 @@ basic.forever(function () {
         led.plot(X, Y)
         New = 1
     }
-})
-control.inBackground(function () {
-	
 })
